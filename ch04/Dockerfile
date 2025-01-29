@@ -4,5 +4,5 @@ RUN ./mvnw clean package
 
 
 FROM openjdk:17
-COPY --from=build /target/ch03-0.0.1-SNAPSHOT.jar /app.jar
+COPY --from=build /target/ch04-0.0.1-SNAPSHOT.jar /app.jar
 CMD ["java", "-jar", "app.jar"]
